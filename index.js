@@ -13,7 +13,7 @@ const getMoviesNames = async (n) => {
 //   const movieArr=data.Search;
 //   movieArr.map(addMovies);
   console.log(data);
-
+  document.getElementById('movieD').innerHTML ="";
   const year = data["Search"];
   const showYear = year.filter((ad) => {
     if (ad["Year"] === myYear.value) {
@@ -36,7 +36,7 @@ showButton.addEventListener("click", () => {
 // getMoviesNames();
 
 function addMovies(data) {
-    let show_movie_detail=document.getElementById('movieD');
+    let show_movie_detail=document.getElementById('movieD') ;
     const movieDetails=
     `
     <div class="frame">
